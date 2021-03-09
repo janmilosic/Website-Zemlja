@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" zemlja ">
+    <meta name="keywords" content="HTML, CSS, spletna stran, zemlja, planet">
+    <meta name="author" content="Jan Milosic ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Comfortaa:wght@500&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="zemlja.css">
+
+    <title>zemlja</title>
+
+</head>
+<body>
+
+    <div class="izbirnimeni">
+        
+        <nav>
+            <ul class="dropdownmeni">
+            
+               <li>
+               <a href="index.html">DOMOV</a>
+               </li>   
+               
+               <li>
+                  <a href="#">O ZEMLJI</a>
+                  <ul>
+                    <li><a href="zemlja.html">ZEMLJA</a></li>
+                    <li><a href="zgradba.html">ZGRADBA </a></li>
+                    <li><a href="atmosfera.html">ATMOSFERA</a></li>
+                  </ul>
+               </li>
+               
+               <li>
+               <a href="galerija.html">GALERIJA </a>
+               </li>
+               
+               <li><a href="registracija.html">NOVICE</a>
+               </li>
+               
+            </ul>
+         </nav>
+
+</div>
+
+<div class="registracija">
+    <form action="prijava.html">
+        <div class="container">
+        <h1>Registracija</h1>
+        <p>Prosim izpolnite spodnji obrazec in se registrirajte za dostop do tedenskih novic</p>
+        <hr>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Vnesi Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Geslo</b></label>
+        <input type="password" placeholder="Vnesi geslo" name="psw" id="psw" required>
+    
+        <label for="psw-repeat"><b>Ponovi geslo </b></label>
+        <input type="password" placeholder="Ponovi geslo" name="psw-repeat" id="psw-repeat" required>
+        
+        <label for="starost"><b>Starost</b></label>
+        <input type="number" placeholder="18" name="starost" min="18" required>
+        <hr>
+    
+        <button type="submit" class="registerbtn">Registriraj se</button>
+        </div>
+        
+        <div class="container signin">
+        <p> Si že registriran? <a href="prijava.html" class="prijavise">Prijavi se</a>.</p>
+        </div>
+    </form>
+</div>
+
+
+<footer>
+    <table class="noga">
+        <tr>
+            <td><a href="zemlja.html" class="besedilonoga">ZEMLJA</a></td>
+            <td><a href="galerija.html" class="besedilonoga">GALERIJA</a></td>
+            <td> KONTAKT</td>
+        </tr>
+        <tr>
+            <td><a href="zgradba.html" class="besedilonoga">NOTRANJOST</a></td>
+            <td><a href="novice.html" class="besedilonoga">NOVICE</a></td>
+            <td>+386 12 123 123</td>
+        </tr>
+        <tr>
+            <td><a href="atmosfera.html" class="besedilonoga">ATMOSFERA</a></td>
+            <td><a href="registracija.html" class="besedilonoga">REGISTRACIJA</a></td>
+            <td>zemlja-spletnastran@gmail.com</td>
+        </tr>
+   </table>
+   </footer>
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+html{
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+
+/* vedno uporabljeno */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#aaadb3;
+}
+
+header{
+    background-color: #212121;
+    color: white;
+}
+
+/* besedilo in slika na vrhu prve strani */
+
+.besedilo1{
+    font-size: 200px;
+    color: #fff;
+}
+
+.slikanavrhu {
+    width: 100%;
+    height: 500px;
+	top: 100px;
+	background-image: url("../slike/Screenshot_2.png");
+	position: absolute;
+    background-size: cover;
+	background-position: center center;
+}
+
+.naslov{
+    text-align: center;
+    text-decoration: none;
+	font-size: 175px;
+	font-family: 'Bree Serif', serif;
+    color: #fff;
+	padding-top:90px;
+}
+
+/* dropdownmeni na vrhu vsake strani */
+
+.izbirnimeni{
+    background-color: #212121;
+    color: white;
+    width: 100%;
+	height: 8%;
+	position: fixed;
+}
+
+nav{
+    padding-top: 1.4%;
+	margin-left: 43%;
+	position: fixed;
+}
+
+ul.dropdownmeni {
+    background: none;
+    height: 30px;
+    width: auto;
+ }
+ 
+ ul.dropdownmeni > li { 
+    float: left;
+    position: relative;
+ }
+ 
+ ul.dropdownmeni ul {
+     background: #7a7d84;
+     display: none;
+     position: absolute;
+     left: 0; top: 100%;
+ }
+ 
+ ul.dropdownmeni a { 
+     font-size: 20px;
+     text-decoration: none;
+     display: block;
+     font-family: poppins;
+     color: white;
+     line-height: 25px;
+     padding: 0 10px;
+ }
+ 
+ ul.dropdownmeni li { list-style: none; }
+ ul.dropdownmeni li:hover { background: #666;  }
+ ul.dropdownmeni li:hover ul { display: block;  }
+ 
+ /* noga spletne strani */
+
+ .noga{
+	width:100%;
+	float:left;
+	background-color:#212121;
+	padding:3%;
+	font-weight:bolder;
+	font-family: poppins;
+	color: white;
+	margin-top: 2%;
+}
+
+.noga table{
+	width:70%;
+	height: 70%;	
+}
+
+.noga td
+{
+	width:20%;
+}
+
+.besedilonoga{
+	color: white;
+	text-decoration: none;
+}	
+
+/* sirina strani */
+
+#sirinastrani{
+    width: 90% ;
+    margin: 0 auto;
+}
+
+ /* slika + besedilo */
+
+.slikaodzadje{
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+}
+
+/* meni oz. izbira google earth ali agoogle map */
+
+#sredinameni{
+	padding:1px;
+	text-align:center;
+	font-family: poppins;
+  }
+  
+  .meni{
+	color:white;
+	background:rgba(0, 0, 0, 0.6);
+	padding:10px 20px;
+	font-size:20px;
+	text-decoration:none;
+	letter-spacing:2px;
+	text-transform:uppercase;
+  }
+  
+  .meni:hover{
+	border:none;
+	background:rgba(255, 255, 255, 0.7);
+	padding:20px 20px;
+	color:black;
+  }
+
+/* zaobljeni robovi */
+
+  #zaobljenirobovi{
+	border-radius: 8px;
+  }
+
+/* različne nastavitve posameznih vsebim */  
+
+.vsebina{
+	padding-top: 600px;
+}
+
+.vsebina1{
+	width:80%;
+	float:left;
+	padding-top:3%;
+	font-family: 'Quicksand', sans-serif;
+	padding-left:5%;
+}
+
+.vsebina1 img{
+	margin-left:5%;
+	margin-right:5%;
+	float:left;
+}
+
+.vsebina1 h1{
+	/* background-color:#308dbe; */
+	background-image: linear-gradient(to right, #308dbe, #065464);
+	width:50%;
+	text-align:center;
+	font-weight:bold;
+	font-family: 'Quicksand', sans-serif;
+	float:right;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-top:3%;
+}
+
+.vsebina1 p{
+	width:50%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	float:right;
+	font-size: 150%;
+	text-align: justify;
+	padding-top: 1%;
+	padding-bottom: 0.5%;
+}
+
+.vsebina2{
+	width:80%;
+	float:left;
+	padding-top:3%;
+	font-family: 'Quicksand', sans-serif;
+	padding-left:9%;
+	
+}
+
+.vsebina2 img{
+	width:40%;
+	height:25%;
+	margin-left:5%;
+	margin-right:5%;
+	float:right;
+	padding-top: 2%;
+}
+
+.vsebina2 h1{
+	/* background-color:#308dbe; */
+	background-image: linear-gradient(to right, #308dbe, #065464);
+	width:50%;
+	text-align:center;
+	font-weight:bold;
+	font-family: 'Quicksand', sans-serif;
+	float:left;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-top:3%;
+}
+
+.vsebina2 p{
+	width:50%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	float:left;
+	font-size: 150%;
+	text-align: justify;
+	padding-top: 1%;
+	padding-bottom: 0.5%;
+}
+
+.vsebina3{
+	width:80%;
+	float:left;
+	padding-top:6%;
+	font-family: 'Quicksand', sans-serif;
+	padding-left:9%;
+	
+}
+
+.vsebina3 img{
+	width:40%;
+	height:25%;
+	margin-left:5%;
+	margin-right:5%;
+	float:right;
+	padding-top: 4%;
+}
+
+.vsebina3 h1{
+	/* background-color:#308dbe; */ 
+	background-image: linear-gradient(to right, #308dbe, #065464);
+	width:50%;
+	text-align:center;
+	font-weight:bold;
+	font-family: 'Quicksand', sans-serif;
+	float:left;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-top:3%;
+}
+
+.vsebina3 p{
+	width:50%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	float:left;
+	font-size: 150%;
+	text-align: justify;
+	padding-top: 1%;
+	padding-bottom: 0.5%;
+}
+
+.vsebina4{
+	width:80%;
+	float:left;
+	padding-top:0%;
+	font-family: 'Quicksand', sans-serif;
+	padding-left:9%;
+	
+}
+
+.vsebina4 img{
+	width:40%;
+	height:25%;
+	margin-left:5%;
+	margin-right:5%;
+	float:right;
+	padding-top: 4%;
+}
+
+.vsebina4 h1{
+	/* background-color:#308dbe; */ 
+	background-image: linear-gradient(to right, #308dbe, #065464);
+	width:50%;
+	text-align:center;
+	font-weight:bold;
+	font-family: 'Quicksand', sans-serif;
+	float:left;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-top:3%;
+}
+
+.vsebina4 p{
+	width:50%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	float:left;
+	font-size: 135%;
+	text-align: justify;
+	padding-top: 1%;
+
+}
+/* različne velikosti za slike */
+
+#slika1{
+	width: 25%;
+	height: 25%;
+}
+
+#slika2{
+	width: 30%;
+	height: 30%;
+}
+
+#slika3{
+	width: 33%;
+	height: 33%;
+}
+
+#slika4{
+	width: 20%;
+	height: 20%;
+}
+
+#slika5{
+	width: 27%;
+	height: 27%;
+}
+
+/* gumbi na prvi strani za skok na naslednje strani (prikazi vec) */
+
+.gumb1{
+	background-image: linear-gradient(to right, #308dbe, #065464);
+	padding:0.5% 1%;
+	margin-left:36%;
+	font-family: 'Quicksand', sans-serif;
+	font-size:20px;
+	font-weight: bold;
+}
+
+.gumb2{
+	background-image: linear-gradient(to right, #308dbe, #065464);
+	padding:0.5% 1%;
+	margin-left:21%;
+	font-family: 'Quicksand', sans-serif;
+	font-size:20px;
+	font-weight: bold;
+}
+
+.gumb3{
+	background-image: linear-gradient(to right, #308dbe, #065464);
+	padding:0.5% 1%;
+	margin-left:28%;
+	font-family: 'Quicksand', sans-serif;
+	font-size:20px;
+	font-weight: bold;
+}
+
+/* besedilo nad sliko */
+
+.besedilonadsliko{
+	width:50%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	float:left;
+	font-size: 150%;
+	text-align: justify;
+	padding-top: 1%;
+	padding-bottom: 0.5%;
+	padding-left:9%;
+}
+
+/* video */
+
+.video1{
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom: 3%;
+	width: 40%;
+	padding-left: 4%;
+}
+
+/* css za galerijo */
+
+.okvir{
+    column-count: 4;
+	padding: 2.5%;
+	padding-top: 7.8%;
+	width: 95%;
+	height: 2400px;
+}
+
+.slike{
+    margin-bottom: 1.5%;
+    overflow: hidden;
+}
+
+.img{
+	width: 100%;
+}
+
+#galerijaslike-velike{
+	height: 950px;
+	width: 645px;
+}
+
+#galerijaslike-male{
+	height: 468px;
+	width: 645px;
+}
+
+/* registracija in prijava  */
+
+.registracija{
+	padding: 10% 35% 10% 35%;
+}
+.prijava{
+	padding: 10% 35% 15% 35%;
+}
+
+.container {
+	padding: 16px;
+	background-color: white;
+	font-family: 'Quicksand', sans-serif;
+  }
+
+  input[type=text], input[type=password] {
+	width: 94%;
+	padding: 10px ;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+  }
+
+  input[type=text], input[type=password] {
+	background-color: #ddd;
+	outline: none;
+  }
+  
+  hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+	margin-top: 10px;
+  }
+  
+  .registerbtn {
+	background-image: linear-gradient(to right, #308dbe, #065464); 
+	color: white;
+	padding: 16px 20px ;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+  }
+  
+  .prijavise{
+	color: rgb(2, 101, 199);
+	font-weight: bold;
+  }
+  
+  .signin {
+	background-color: #f1f1f1;
+	text-align: center;
+  }
+
+  /* vse za clanek */
+
+  .claneknaslov{
+	  font-weight: bold;
+	  font-family: 'Quicksand', sans-serif;
+	  font-size: 40px;
+	  padding-top: 7%;
+	  padding-left: 9%;
+  }
+
+  .besedilopodnasvom{
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+	padding-top: 1%;
+	padding-left: 9%; 
+  }
